@@ -5,7 +5,8 @@ import { legacy_createStore as createStore } from "redux";
 import { applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
 import App from "./App";
-import reducers from "./reducers";
+import reducers from "./reducers/reducers";
+import "./index.css";
 
 const store = createStore(reducers, compose(applyMiddleware(thunk)));
 ReactDOM.render(
